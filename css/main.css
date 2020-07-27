@@ -129,3 +129,17 @@ body {
   background-color: var(--mainGrey);
   color: var(--mainBlack);
 }
+
+/* skills */
+
+.skills{
+  background-color: var(--mainBlack);
+}
+
+.skill-text{
+  text-align: justify;
+}
+
+.skill-icon{
+  font-size: 1.8rem;
+}
