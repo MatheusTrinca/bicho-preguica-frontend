@@ -1,0 +1,131 @@
+@import url("https://fonts.googleapis.com/css?family=Calligraffitti|Mali");
+/* GENERAL STYLES */
+:root {
+  --mainYellow: #fdbe02;
+  --mainWhite: #fff;
+  --mainBlack: #071013;
+  --mainGrey: #9b9999;
+  --TransGrey: rgba(0, 0, 0, 0.1);
+}
+body {
+  color: var(--mainBlack);
+  background: var(--mainWhite);
+  font-family: "Mali", cursive;
+}
+.text-slanted {
+  font-family: "Calligraffitti", cursive;
+}
+.btn-yellow{
+  color: var(--mainBlack);
+  background-color: var(--mainYellow);
+  text-transform: capitalize;
+  font-size: 1.2rem;
+}
+.btn-yellow:hover{
+  background-color: var(--mainBlack);
+  color: var(--mainYellow);
+}
+
+/* ########### HOME PAGE ########### */
+/* Navbar */
+.navbar-toggler{
+  outline: none !important;
+  border: none;
+  font-size: 2.2rem;
+  color: var(--mainYellow)!important;
+}
+.nav-link{
+  font-size: 1.6rem;
+  border-bottom: 0.1rem solid var(--mainWhite);
+}
+.nav-active{
+  border-bottom: 0.1rem solid var(--mainYellow);
+}
+.navbar-icon{
+  font-size: 1.6rem;
+}
+.navbar-cart-icon{
+  color: var(--mainBlack);
+  position: relative;
+}
+.navbar-cart-icon:hover{
+  color: var(--mainGrey);
+}
+.cart-items{
+  position: absolute;
+  top: -15%;
+  right: -25%;
+  background-color: var(--mainYellow);
+  color: var(--mainWhite);
+  border-radius: 50%;
+  font-size: 0.8rem;
+  padding: 0.04rem 0.2rem;
+}
+/* Banner */
+.banner{
+  min-height: calc(100vh - 101px);
+  background: url('../img/pageBcg/bannerBcg.jpeg') center/cover no-repeat fixed;
+}
+
+/* Featured */
+.featured-container{
+  position: relative;
+  background-color: var(--TransGrey);
+  overflow: hidden;
+}
+.old-price{
+  text-decoration: line-through;
+}
+.featured-search-icon{
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateX(100%);
+  padding: 0.4rem;
+  background-color: var(--mainWhite);
+  color: black;
+  cursor: pointer;
+  font-size: 1.2rem;
+  transition: all 750ms ease-in-out;
+}
+.featured-store-link{
+  position: absolute;
+  right: 0;
+  top: 70%;
+  transform: translateX(100%);
+  background-color: var(--mainYellow);
+  color: var(--mainBlack);
+  padding: 0.4rem;
+  transition: all 750ms ease-in-out;
+}
+.featured-container:hover .featured-store-link{
+  transform: translateX(0%);
+}
+.featured-container:hover .featured-search-icon{
+  transform: translateX(0%);
+}
+
+/* Partner Carousel */
+
+.partner{
+  background-color: var(--TransGrey);
+}
+
+.carousel-control-prev{
+  font-size: 2rem;
+  color: var(--mainBlack);
+  transform: translateX(-200%);
+}
+
+.carousel-control-next{
+  font-size: 2rem;
+  color: var(--mainBlack);
+  transform: translateX(200%);
+}   
+
+/* newsletter */
+
+.form-icon{
+  background-color: var(--mainGrey);
+  color: var(--mainBlack);
+}
