@@ -26,6 +26,10 @@ body {
   color: var(--mainYellow);
 }
 
+.text-yellow{
+  color: var(--mainYellow);
+}
+
 /* ########### HOME PAGE ########### */
 /* Navbar */
 .navbar-toggler{
@@ -64,7 +68,11 @@ body {
 /* Banner */
 .banner{
   min-height: calc(100vh - 101px);
-  background: url('../img/pageBcg/bannerBcg.jpeg') center/cover no-repeat fixed;
+  background: url('../img/pageBcg/bannerBcg.jpeg');
+  background-size: cover;
+  background-position: 0% 70%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 /* Featured */
@@ -142,4 +150,31 @@ body {
 
 .skill-icon{
   font-size: 1.8rem;
+}
+
+/* footer */
+
+footer{
+  background-color: rgba(0, 0, 0, 0.8)
+}
+
+.footer-title{
+  font-size: 2rem;
+  max-width: 80%;
+  color: var(--mainYellow);
+  padding: 0.8rem;
+  border: 0.3rem solid var(--mainYellow);
+}
+
+.social-media, .info{
+  font-size: 1.2rem;
+}
+
+.social-media a{
+  text-decoration: none;
+  color: var(--mainYellow);
+}
+
+.social-media a:hover{
+  color: #b88a03;
 }
